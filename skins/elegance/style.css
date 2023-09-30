@@ -1,0 +1,281 @@
+/* Some definitions used everywhere */
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #BDCC6D;
+	color: #3B4325;
+	line-height: 1.2em;
+	font-family: verdana, arial, san-serif;
+	font-size: 90%;	
+}
+
+/* links */
+a { 
+	color: #333;
+	font-weight: bold;
+	text-decoration: underline;
+}
+/* hovering links */
+a:hover {
+	text-decoration: underline;
+}
+
+/*small fonts */
+.small {font-size: 80%;}
+
+/*rounded top corners used in various places */
+.tl {background: #758F39 url(images/tl.gif) no-repeat top left;}
+.tr {background: url(images/tr.gif) no-repeat top right;}
+
+/* Left and right floats used in some blocks */
+.left {float: left; width: 55%; text-align: left;}
+.right {float: right; width: 30%; text-align: right;}
+.clear {clear: both;}
+
+/* the background of the banner. this allows us to make the banner fit the width of the page, no matter how wide */
+#bannerback {
+	height: 150px;
+	margin: 0px;  
+	background: #B5C9BA url('images/back.gif') repeat top left; 	
+}
+
+/* the image in the banner */
+#banner {
+	height: 150px; 
+	margin: 0px;
+	background: url('images/elegance.jpg') no-repeat top left; 	
+}
+
+/* search engines like headings so we will use them for sitename and 
+slogan, but we don't want them to appear on the page and mess up our banner */
+	#banner h1, #banner h2 {display: none;}
+
+/* The location of the div containing the skin change drop menu  in the banner area */
+#skin {
+	position: absolute;
+	right: 50px;
+	top: 25px;
+}
+/* The location of the div containing the RSS link in the banner area */
+#rss {
+	position: absolute;
+	right: 50px;
+	top: 55px; 
+}
+
+/* the following defines your menu below the banner div */
+#menu { 
+	position: absolute;
+	top: 98px;
+	right: 0px;
+	text-align: right; 
+	color: #517059; 
+	font-weight: bold; 
+	font-size: 95%;
+}
+
+/*The rounded off left edge image.*/ 
+#menu ul {
+	margin: 0px;
+	background: #758F39 url(images/bl.gif) no-repeat bottom left; 		padding: 5px;
+}
+
+#menu ul li {display: inline; padding: 1px;}
+
+/* links in the menu */
+#menu a {
+ 	color: #CEDCAE; 
+	font-weight: bold; 
+	font-size: 95%; 
+	text-decoration: none;
+	text-transform: uppercase; 
+	border-right: 1px solid #CEDCAE; 
+	padding: 0px 5px;
+}
+
+/* Hovered links in the menu */
+#menu a:hover { 
+	color: #CEDCAE; 
+	background: #93B348; 
+	border-right: 1px solid #CEDCAE; 
+}
+
+/* The link for the currently displayed page in the menu */
+#menu #current {text-decoration: underline;}
+
+/* end menu setup */
+
+
+/* the footer box at the bottom of the page */
+#footer {
+	padding: 0px;
+	border-top: 5px solid #758F39;
+	text align: center;
+	clear: both;
+}
+
+/* End universal page setup */
+
+
+/*Index page*/
+/*left and right columns--line-height fixes a disappearing float IE bug */
+#leftindex { 
+	width: 25%;
+	float: left;
+	line-height: 1.3em;
+}
+
+#rightindex {
+	width: 25%;
+	float: right;
+	line-height: 1.3em;
+}
+
+#middleindex {margin: 3px 26%;}
+
+/* This controls the look of the blocks on a few pages   */
+/* The box around the block */
+.block {margin: 0px 0px 15px 0px;}
+
+/* The block's title */
+.block .title {
+	color: #CEDCAE;
+	font-weight: bold;
+	text-align: center;
+	padding: 4px;
+}
+
+.block .newstitle, .block .storytitle {
+	color: #CEDCAE;
+	font-weight: bold;
+	text-align: left;
+	padding: 4px 7px 0px 7px;
+}
+
+/* The block's content */
+.block .content {
+	background: #FFFFFF;
+	border-top: 5px solid #758F39;
+	border-right: 1px solid #758F39;
+	border-bottom: 5px solid #758F39;
+	border-left: 1px solid #758F39;
+	padding: 5px;
+}
+
+.block .bottom {
+	color: #CEDCAE; 
+	background: #758F39; 
+	padding: 2px 5px; 
+	font-weight: bold; 
+	font-size: 80%; 
+}
+
+
+
+/*main content on the page */
+#mainpage {margin: 0px 2%;}
+
+
+
+
+
+#pagetitle, .sectionheader {
+	text-align: center; 
+	font-weight: bold;  
+	font-size: 105%;
+	margin: 10px;
+}
+	
+/* Where there's a list of alphabet links #alphabet controls their look. Just to make things simpler #pagelinks controls the look of the links at the bottom of multi-page results and will be set here too. Generally, they look alike.*/
+#alphabet, #pagelinks {
+ 	text-align: center;
+ 	font-size: 13px;
+ 	margin: 1em 0;
+	line-height: 25px;
+}
+
+#alphabet a, #pagelinks a {
+ 	background: #758F39;
+ 	border: 1px solid #000;
+ 	padding: 2px 4px;
+ 	margin: 0;
+ 	text-decoration: none;
+ 	color: #CEDCAE; 
+}
+
+#alphabet a:hover, #pagelinks a:hover {
+ 	background: #CEDCAE;
+	border: 1px solid #000;
+	padding: 2px 4px;
+ 	margin: 0;
+ 	text-decoration: none;
+ 	color: #758F39;
+}
+
+#alphabet #currentletter, #pagelinks #currentpage {
+ 	background: #CEDCAE;
+ 	color: #758F39;
+ 	border: 1px solid #000;
+ 	padding: 2px 4px;
+ 	margin: 0;
+ 	text-decoration: none;
+	font-weight: bold; 
+} 
+
+#sortform {text-align: center; margin: 10px;}
+
+/* To center column divs so they don't look so off-balance. This is for 2 columns. You'll want to play with the width if you have more */
+#columncontainer {
+	margin: 5px auto;
+	width: 60%; 
+	min-width: 60%;
+	text-align: center;
+}
+html>body #columncontainer {text-align: left;}
+
+.jumpmenu, #sort {margin: 5px;}
+
+.notes {margin: 5px auto; width: 65%; min-width: 65%; text-align: center;}
+html>body .notes {text-align: left;}
+
+#story {padding: 0px 10px;}
+
+The following declarations control the tabs */
+#tabs {	
+	margin: 0;
+	padding: 0;
+	background: #758F39;
+	margin-bottom: 1em;
+}
+
+
+#tabs ul {
+	padding: 3px 0;	margin: 0;
+	border-bottom: 1px solid #000;
+	font: bold 12px Verdana, sans-serif;
+}
+
+#tabs li {
+	list-style: none;
+	margin: 0;
+	display: inline;
+}
+
+#tabs li a {
+	padding: 3px 0.5em;
+	margin-left: 3px;
+	border: 1px solid #000;
+	border-bottom: none;
+	background: #214263;
+	text-decoration: none;
+	color: #CEDCAE;
+}
+
+#tabs li a:hover {
+	color: #000000;
+	background: #369;
+	border-color: #000;
+}
+
+#tabs #active a {background:#BDCC6D; color: #758F39;}
+
